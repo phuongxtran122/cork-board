@@ -1,0 +1,81 @@
+.App {
+    text-align: center;
+  }
+  .container{
+    background-color: #f2f2f2;
+    border: 2px solid rgb(223, 95, 84); 
+    width: 100%;
+    max-width: 100%;
+
+    height: 100vh;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  }
+  .board {
+    border: 2px solid rgb(223, 95, 84); 
+
+    position: relative;
+  overflow: auto; /* Added to enable scrolling when sticky notes exceed the visible area */
+  box-sizing: border-box; /* Ensures padding is included in the width and height calculation */
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  }
+  .box {
+    position: absolute;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    max-width: 215px;
+    overflow-wrap: break-word;
+    border-radius: 5px;
+    padding: 1em;
+    margin: auto;
+    user-select: none;
+  }
+
+  #new-item {
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  input {
+    border-radius: 5px 0px 0px 5px;
+    color: white;
+    font-size: 1.3em;
+    background-color: transparent;
+    padding: 0.5em;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: gray;
+    font-size: 1em;
+    padding: 0.7em;
+    border-radius: 0px 5px 5px 0px;
+  }
+  
+  button:hover {
+    background-color: rgb(173, 162, 162);
+  }
+  
+  #delete {
+    font-size: 0.6em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+  }
+  
+  #delete:hover {
+    color: rgb(255, 55, 55);
+  }
